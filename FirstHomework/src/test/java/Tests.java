@@ -21,7 +21,7 @@ public class Tests {
     }
 
     @Test
-    public void FirstTest(){
+    public void firstTest(){
         driver.get("http://www.seleniumhq.org/");
         WebElement downloadBtn = driver.findElement(By.xpath("//a[@title='Get Selenium']"));
         downloadBtn.click();
@@ -30,7 +30,7 @@ public class Tests {
     }
 
     @Test
-    public void SecondTest() throws InterruptedException {
+    public void secondTest() throws InterruptedException {
         driver.get("https://www.google.com.ua/");
         WebElement searchField = driver.findElement(By.xpath("//input[@name='q']"));
         waitForElementTobeShown(searchField);
